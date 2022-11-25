@@ -1,0 +1,84 @@
+body {
+  font-family: 'Akshar', sans-serif;
+  margin: 0;
+}
+h1, h2, h3, p {
+  margin: 0;
+}
+.bg-light {
+  background-color: white;
+}
+.br-1 {
+  border-radius: 1em;
+}
+.p-1 {
+  padding: 1em;
+}
+.pt-1 {
+  padding-top: 1em;
+}
+.mt-1 {
+  margin-top: 1em;
+}
+.mr-1 {
+  margin-right: 1em;
+}
+.mb-1 {
+  margin-bottom: 1em;
+}
+.ml-1 {
+  margin-left: 1em;
+}
+.cols {
+  display: flex;
+  flex-direction: column;
+}
+.w-100 {
+  width: 100%;
+}
+.grid {
+  display: grid;
+}
+.grid-area-1 {
+  grid-area: 1/1;
+}
+.pos-fix {
+  position: fixed;
+}
+.pos-rel {
+  position: relative;
+}
+.center-items {
+  place-items: center;
+}
+.c-light {
+  color: white;
+}
+.overlay {
+  width: 100%;
+  opacity: 50%;
+  background-color: black;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
+@media(min-width: 768px) {
+  .cols-md {
+    flex-direction: row;
+  }
+  .col-md {
+    flex: 50%;
+  }
+  .vmd-mr-1 {
+    margin-right: 1em;
+  }
+  .vmd-ml-1 {
+    margin-left: 1em;
+  }
+}
