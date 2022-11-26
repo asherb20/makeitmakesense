@@ -1,84 +1,292 @@
+/* global */
 body {
   font-family: 'Akshar', sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 h1, h2, h3, p {
   margin: 0;
 }
+@media(min-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.25em;
+  }
+}
+@media(min-width: 992px) {
+  h1 {
+    font-size: 2.25em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+
+/* colors */
+.bg-none {
+  background-color: transparent;
+}
+.bg-dark {
+  background-color: black;
+}
 .bg-light {
   background-color: white;
 }
-.br-1 {
-  border-radius: 1em;
+.light {
+  color: white;
 }
-.p-1 {
+.hover-bg-light:hover {
+  background-color: white;
+  transition: .5s;
+}
+.hover-dark:hover {
+  color: black;
+  transition: .5s;
+}
+
+/* position */
+.position-fixed {
+  position: fixed;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.place-items-center {
+  place-items: center;
+}
+.place-items-end-center {
+  place-items: end center;
+}
+.right-0 {
+  right: 0;
+}
+.top-0 {
+  top: 0;
+}
+
+/* padding */
+.padding-0 {
+  padding: 0;
+}
+.padding-1 {
   padding: 1em;
 }
-.pt-1 {
+.padding-2 {
+  padding: 2em;
+}
+.padding-top-half {
+  padding-top: .5em;
+}
+.padding-top-1 {
   padding-top: 1em;
 }
-.mt-1 {
+.padding-top-2 {
+  padding-top: 2em;
+}
+.padding-right-1 {
+  padding-right: 1em;
+}
+.padding-right-2 {
+  padding-right: 2em;
+}
+.padding-bottom-half {
+  padding-bottom: .5em;
+}
+.padding-bottom-1 {
+  padding-bottom: 1em;
+}
+.padding-bottom-2 {
+  padding-bottom: 2em;
+}
+.padding-left-1 {
+  padding-left: 1em;
+}
+.padding-left-2 {
+  padding-left: 2em;
+}
+
+/* margin */
+.margin-0 {
+  margin: 0;
+}
+.margin-top-1 {
   margin-top: 1em;
 }
-.mr-1 {
-  margin-right: 1em;
-}
-.mb-1 {
+.margin-bottom-1 {
   margin-bottom: 1em;
 }
-.ml-1 {
-  margin-left: 1em;
+.margin-auto {
+  margin: auto;
 }
-.cols {
-  display: flex;
-  flex-direction: column;
+
+/* width */
+.width-75 {
+  width: 75%;
 }
-.w-100 {
+.width-100 {
   width: 100%;
 }
+.max-width-sm {
+  max-width: 576px;
+}
+.max-width-md {
+  max-width: 768px;
+}
+.max-width-lg {
+  max-width: 992px;
+}
+
+/* height */
+.height-100 {
+  height: 100vh;
+}
+
+/* opacity */
+.opacity-50 {
+  opacity: 50%;
+}
+.opacity-75 {
+  opacity: 75%;
+}
+
+/* z-index */
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.z-index-3 {
+  z-index: 3;
+}
+
+/* border */
+.border-none {
+  border: none;
+}
+.border-radius-1 {
+  border-radius: 1em;
+}
+.border-dark {
+  border-color: black;
+}
+.border-width-2 {
+  border-width: .2em;
+}
+
+/* shadow */
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+
+/* grid */
 .grid {
   display: grid;
 }
 .grid-area-1 {
   grid-area: 1/1;
 }
-.pos-fix {
-  position: fixed;
+
+/* flex */
+.flex {
+  display: flex;
 }
-.pos-rel {
-  position: relative;
+.justify-content-end {
+  justify-content: flex-end;
 }
-.center-items {
-  place-items: center;
+.align-items-center {
+  align-items: center;
 }
-.c-light {
-  color: white;
+@media(min-width: 992px) {
+  .flex-lg {
+    display: flex;
+  }
 }
-.overlay {
-  width: 100%;
-  opacity: 50%;
-  background-color: black;
+
+/* columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
-.z-1 {
-  z-index: 1;
+.col {
+  flex: 100%;
 }
-.z-2 {
-  z-index: 2;
+.col-4 {
+  flex: 4;
 }
-.z-3 {
-  z-index: 3;
+.col-6 {
+  flex: 6;
+}
+.col-8 {
+  flex: 8;
 }
 @media(min-width: 768px) {
-  .cols-md {
-    flex-direction: row;
+  .col-md-4 {
+    flex: 4;
   }
-  .col-md {
-    flex: 50%;
+  .col-md-6 {
+    flex: 6;
   }
-  .vmd-mr-1 {
-    margin-right: 1em;
+  .row-gap-md-1 {
+    column-gap: 1em;
   }
-  .vmd-ml-1 {
-    margin-left: 1em;
+  .row-gap-md-2 {
+    column-gap: 2em;
+  }
+}
+
+/* outline */
+.outline-none {
+  outline: none;
+}
+
+/* cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* font */
+.font-size-1 {
+  font-size: 1em;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+
+/* lists */
+.list-style-none {
+  list-style-type: none;
+}
+
+/* display */
+.display-block {
+  display: block;
+}
+.display-none {
+  display: none;
+}
+@media(min-width: 992px) {
+  .display-none-lg {
+    display: none;
   }
 }
