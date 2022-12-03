@@ -1,49 +1,37 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage = () => {
+export default function NotFoundPage() {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
+    <Layout>
+      <StaticImage
+        className='grid-area-1'
+        style={{ maxHeight: 500 }}
+        imgStyle={{ objectPosition: '60% 40%' }}
+        layout='fullWidth'
+        src='../images/contact.jpeg'
+        alt='Make It Make Sense Contact Image'
+        aspectRatio={1}
+      />
+      <section className='padding-top-2 padding-right-1 padding-bottom-2 padding-left-1 max-width-lg margin-auto'>
+        <h2>404 Page Not Found</h2>
+        <p>The page you are looking for does not exist.</p>
+        <Link className='text-decoration-underline dark' to='/'>
+          Return Home
+        </Link>
+      </section>
+    </Layout>
+  );
 }
 
-export default NotFoundPage
-
-export const Head = () => <title>Not found</title>
+export const Head = () => (
+  <>
+    <title>404 Not Found | Make It Make Sense</title>
+    <meta name='description' content='The page you are looking for does not exist.' />
+    <meta name='keywords' content='Make It Make Sense, Music, Band, Rock, Grunge, Alernative' />
+    <meta name='author' content='Asher Best' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  </>
+);
