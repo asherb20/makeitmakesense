@@ -97,7 +97,7 @@ export default function IndexPage() {
         <div className='grid-area-1 position-relative place-items-center z-index-2 width-100 max-width-sm margin-auto '>
           <div className='padding-top-2 padding-right-1 padding-bottom-2 padding-left-1'>
             <h2 className='light padding-bottom-1'>Contact</h2>
-            <form name='contact' action='/success' method='POST' className='bg-light padding-2 border-radius-1 shadow' data-netlify='true'>
+            <form name='contact' action='/success' method='post' className='bg-light padding-2 border-radius-1 shadow' data-netlify='true'>
               <div className='margin-bottom-1 grid'>
                 <input type='text' name='name' placeholder='Name' className='outline-none border-dark border-width-2 border-radius-1 padding-1' required />
               </div>
