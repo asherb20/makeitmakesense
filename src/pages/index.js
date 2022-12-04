@@ -99,13 +99,13 @@ export default function IndexPage() {
             <h2 className='light padding-bottom-1'>Contact</h2>
             <form name='contact' action='/success' method='POST' className='bg-light padding-2 border-radius-1 shadow' data-netlify='true'>
               <div className='margin-bottom-1 grid'>
-                <input type='text' placeholder='Name' className='outline-none border-dark border-width-2 border-radius-1 padding-1' required />
+                <input type='text' name='name' placeholder='Name' className='outline-none border-dark border-width-2 border-radius-1 padding-1' required />
               </div>
               <div className='margin-bottom-1 grid'>
-                <input type='email' placeholder='Email' className='outline-none border-dark border-width-2 border-radius-1 padding-1' required />
+                <input type='email' name='email' placeholder='Email' className='outline-none border-dark border-width-2 border-radius-1 padding-1' required />
               </div>
               <div className='margin-bottom-1 grid'>
-                <textarea rows={10} placeholder='Message' className='outline-none border-dark border-width-2 border-radius-1 padding-1 resize-none' required />
+                <textarea name='message' rows={10} placeholder='Message' className='outline-none border-dark border-width-2 border-radius-1 padding-1 resize-none' required />
               </div>
               <input
                 type='submit'
