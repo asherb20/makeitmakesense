@@ -12,6 +12,7 @@ export default function IndexPage() {
         aspectRatio={1}
         style={{ maxHeight: '100vh' }}
         imgStyle={{ objectPosition: 'top' }}
+        quality={100}
       />
       <section id='music' className='padding-top-2 padding-right-1 padding-bottom-2 padding-left-1 max-width-lg margin-auto'>
         <h2>Music</h2>
@@ -96,7 +97,7 @@ export default function IndexPage() {
         <div className='grid-area-1 position-relative place-items-center z-index-2 width-100 max-width-sm margin-auto '>
           <div className='padding-top-2 padding-right-1 padding-bottom-2 padding-left-1'>
             <h2 className='light padding-bottom-1'>Contact</h2>
-            <form name='contact' method='POST' className='bg-light padding-2 border-radius-1 shadow' netlify>
+            <form name='contact' action='/success' method='POST' className='bg-light padding-2 border-radius-1 shadow' netlify>
               <div className='margin-bottom-1 grid'>
                 <input type='text' placeholder='Name' className='outline-none border-dark border-width-2 border-radius-1 padding-1' required />
               </div>

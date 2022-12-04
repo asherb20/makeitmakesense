@@ -11,7 +11,7 @@ const NAV_LINKS = [
 const SOCIAL_LINKS = [
   { key: 'facebook', href: 'https://www.facebook.com/makeitmakesensemusic', icon: <FacebookIcon size={28} color='white' /> },
   { key: 'instagram', href: 'https://www.instagram.com/makeitmakesensemusic/', icon: <InstagramIcon size={28} color='white' /> },
-  { key: 'spotify', href: 'https://open.spotify.com/artist/2nkaMtzskTjyyTQJLK4ehl', icon: <SpotifyIcon size={36} color='white' /> },
+  { key: 'spotify', href: 'https://open.spotify.com/artist/2nkaMtzskTjyyTQJLK4ehl', icon: <SpotifyIcon size={48} color='white' /> },
   { key: 'apple', href: 'https://music.apple.com/gb/artist/make-it-make-sense/1548916417', icon: <AppleIcon size={28} color='white' /> }
 ];
 
@@ -56,10 +56,12 @@ export default function Layout({ children }) {
   return (
     <>
       <nav className='position-fixed width-100 z-index-3' style={navStyle}>
-        <div className='max-width-xl margin-auto padding-1'>
+        <div className='max-width-xl margin-auto padding-top-half padding-right-1 padding-bottom-half padding-left-1'>
           <div className='row'>
             <div className='col-8'>
-              <h1>Make It Make Sense</h1>
+              <Link to='/' className='text-decoration-none dark'>
+                <h1>Make It Make Sense</h1>
+              </Link>
             </div>
             <div className='col-4 flex justify-content-end align-items-center'>
               <button className='bg-none border-none padding-0 margin-0 display-none-lg' style={{ height: 24 }} onClick={() => setNavLinksVisible(true)}>
