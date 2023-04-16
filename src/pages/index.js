@@ -20,6 +20,25 @@ export default function IndexPage() {
           <div className='margin-top-1 col col-md-6'>
             <iframe
               className='border-radius-1'
+              title='Renew EP by Make It Make Sense on Spotify'
+              src='https://open.spotify.com/embed/album/63gYdWLapxH46dh2njNuMg?utm_source=generator'
+              width='100%'
+              height='380'
+              frameBorder='0'
+              allowFullScreen=''
+              allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+              loading='lazy'
+            />
+          </div>
+          <div className='margin-top-1 col col-md-6'>
+            <h3>Renew EP</h3>
+            <p className='margin-top-1'>Renew EP is available on all major streaming platforms. Featuring songs such as "Outside of Town" and "Embers".</p>
+          </div>
+        </div>
+        <div className='row row-gap-md-2'>
+          <div className='margin-top-1 col col-md-6'>
+            <iframe
+              className='border-radius-1'
               title='Memory Wall by Make It Make Sense on Spotify'
               src='https://open.spotify.com/embed/album/6q7s7kaYzbKl548e4c3Kel?utm_source=generator&theme=0'
               width='100%'
