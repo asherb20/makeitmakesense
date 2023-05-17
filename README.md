@@ -1,5 +1,7 @@
 # Make It Make Sense
 
+A simple Gatsby landing page for my band, Make It Make Sense.
+
 ## Roadmap
 
 - [x] Navigation
@@ -10,6 +12,5 @@
 - [x] Contact form
 - [x] Footer section
 - [x] Head
-- [ ] Animations
 - [x] Content
-- [ ] 404 page
+- [x] 404 page

@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Make It Make Sense`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.makeitmakesense.band`
   },
   plugins: [
     'gatsby-plugin-image',
